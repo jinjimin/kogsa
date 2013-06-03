@@ -9,7 +9,6 @@ gem 'pg'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
-gem 'heroku'
 
 # Gems used only for assets and not required
 # in production environments by default.

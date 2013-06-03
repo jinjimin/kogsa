@@ -75,7 +75,7 @@ config.action_mailer.smtp_settings = {
   domain: "http://thawing-meadow-7503.herokuapp.com/",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: ENV["testingprojectemail"],
-  password: ENV["password1234"]
+  user_name: "testingprojectemail",
+  password: "password1234"
 }
 end
