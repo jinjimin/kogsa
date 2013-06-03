@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @ksafreepost.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @ksafreepost.content %>
+</p>
+
+<p>
+  <b>Viewcount:</b>
+  <%= @ksafreepost.viewcount %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @ksafreepost.created_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_ksafreepost_path(@ksafreepost) %> |
+<%= link_to 'Back', ksafreeposts_path %>
