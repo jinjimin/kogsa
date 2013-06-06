@@ -47,12 +47,7 @@ class MainController < ApplicationController
   	end
   end
   
-  def ksafree
-  	respond_to do |format|
-  		format.html #ksafree.html.erb
-  	end
-  end
-  
+
   def ksa
   	respond_to do |format|
   		format.html #kogsafree.html.erb
