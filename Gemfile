@@ -9,6 +9,7 @@ gem 'pg'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
+gem 'haml'
 
 
 # Gems used only for assets and not required

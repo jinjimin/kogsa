@@ -1,25 +1,13 @@
 Kogsa::Application.routes.draw do
-  resources :ksafreeposts
 
   devise_for :users
 
   resources :posts
+  resources :boards 
+  resources :comments
 	
   root :to => 'main#home'
-  match "uva" => 'main#uva'	
-  match "ksa" => 'main#ksa'
-  match "kogsa" => 'main#kogsa'
-  match "making" => 'main#making'
-  match "qna" => 'main#qna'
-  match "recruit" => 'main#recruit'
-  match "living" => 'main#living'
-  match "ksafree" => 'ksafreeposts#ksafree'
-  match "kogsafree" => 'main#kogsafree'
-  match "market" => 'main#market'
-  match "gallery" => 'main#gallery'
-  match "organization" => 'main#organization'
-  match "sponsor" => 'main#sponsor'
-  match "contact" => 'main#contact'
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

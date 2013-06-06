@@ -1,0 +1,8 @@
+= @board.name
+
+
+- @posts.each do |post|
+  = post.title
+  = post.content
+
+=link_to 'create post', new_post_path(board_id: @board.id)

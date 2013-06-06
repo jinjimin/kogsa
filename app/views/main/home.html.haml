@@ -1,0 +1,26 @@
+.row
+  .span1
+  .span9
+    #myCarousel.carousel.slide{:style => "width: 720px; height: 300px; margin: 0 auto"}
+      / Carousel slides
+      .carousel-inner
+        .active.item{:style => "width: 720px; height: 300px; margin: 0 auto"}
+          %img{:src => "assets/uva1.jpg"}/
+          .carousel-caption
+            %h4 Head
+            %p make
+        .item{:style => "width: 720px; height: 300px; margin: 0 auto"}
+          %img{:src => "assets/uva2.jpg"}/
+          .carousel-caption
+            %h4 Head
+            %p second make
+      / Carousel nav
+      %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+      %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+/ End row
+%body
+  HOME
+:javascript
+  $('#myCarousel').carousel({
+  interval: 3000
+  })
